@@ -32,10 +32,9 @@ export const TYPED_STRINGS = [
   "I design and develop things",
   "I develop modern frontend apps",
   "I design dynamic user experience",
-  "I design and develop motion",
 ];
 
-export const EMAIL = "ayush.singh.xda@gmail.com";
+export const EMAIL = "timbetekanem@gmail.com";
 
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/alphaayush/",
@@ -62,8 +61,8 @@ export interface IProject {
 export const PROJECTS: IProject[] = [
   {
     name: "Ariss WEB App",
-    image: "/projects/deliver.png",
-    blurImage: "/projects/blur/figgen-blur.jpg",
+    image: "/projects/deliver.jpg",
+    blurImage: "/projects/deliver.jpg",
     description:
       "A FINTECH APPLICATION USED FOR BILLS PAYMENT, AIRTIME RECHARGE, TRANSFER TO BANKS, FUND WALLET FROM BANK, SEND MONEY THROUGH WALLET TO WALLET ETC",
     gradient: ["#1F6582", "#1ABCFE"],
@@ -83,8 +82,8 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Payvice",
-    image: "/projects/payvice.png",
-    blurImage: "/projects/payvice.jpg",
+    image: "/projects/payvice.jpg",
+    blurImage: "/projects/blur/dlt-website-blur.jpg",
     description:
       "A FINTECH APPLICATION FOR VALUE ADDED SERVICES AND BILL PAYMENT",
     gradient: ["#245B57", "#004741"],
@@ -93,7 +92,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Paysure Web Application ",
-    image: "/projects/paysure.png",
+    image: "/projects/dl-unify.jpg",
     blurImage: "/projects/blur/dl-unify-blur.jpg",
     description: "Built the application from zero to production 🚀",
     gradient: ["#003052", "#167187"],
@@ -102,7 +101,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "EduTech",
-    image: "/projects/edutech.png",
+    image: "/projects/ngx-quill-upload.jpg",
     blurImage: "/projects/blur/ngx-quill-upload-blur.jpg",
     description: "A WEBSITE FOR GARDEN VENTURES OF NIGERIA",
     gradient: ["#3A0000", "#771E1E"],
@@ -111,7 +110,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Coursegram",
-    image: "/projects/coursegram.png",
+    image: "/projects/huminos.jpg",
     blurImage: "/projects/blur/huminos-blur.jpg",
     description:
       "A WEB APPLICATION FOR SAVING PROJECTS AND CROSS REFERENCING PAST PROJECTS",
@@ -187,7 +186,6 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
-
   {
     type: NodeTypes.CHECKPOINT,
     title: "2022",
@@ -195,13 +193,6 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
-  // {
-  //   type: NodeTypes.CHECKPOINT,
-  //   title: "2021",
-  //   size: ItemSize.LARGE,
-  //   shouldDrawLine: false,
-  //   alignment: Branch.LEFT,
-  // },
   {
     type: NodeTypes.CHECKPOINT,
     title: "Software developer(contract)- Solustack",
@@ -215,48 +206,48 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
+    title: "2021",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
     title: "UI/UX & FRONT-END DEVELOPER -ITEX Integrated Services",
     size: ItemSize.SMALL,
-    subtitle:
-      "Developed and led the creation of responsive web applications and user interfaces for financial institutions and e-commerce, spearheaded technical integrations, and managed key projects and team efforts.",
+    subtitle: "Developed and led the creation of responsive",
+    // web applications and user interfaces for financial institutions and e-commerce, spearheaded technical integrations, and managed key projects and team efforts.",
     image: "/timeline/flipkart.svg",
     slideImage: "/timeline/flipkart.gif",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "2020",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
+
   {
     type: NodeTypes.CHECKPOINT,
     title:
       "IT SUPPORT AND SOFTWARE DEVELOPER - Lagos Reproductive Healthcare Centre",
     size: ItemSize.SMALL,
-    subtitle:
-      " Participated in the Andela Certification for Android collaborated with other teams to build scalable Apps.🎯",
+    subtitle: " Participated in the Andela Certification for Android",
+    //  collaborated with other teams to build scalable Apps.🎯",
     image: "/timeline/huminos.svg",
     slideImage: "/timeline/huminos-freelance.jpg",
-    shouldDrawLine: true,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "",
-    size: ItemSize.LARGE,
     shouldDrawLine: false,
-    alignment: Branch.LEFT,
+    alignment: Branch.RIGHT,
   },
+  // {
+  //   type: NodeTypes.CHECKPOINT,
+  //   title: "Motion Graphics (freelance)",
+  //   size: ItemSize.SMALL,
+  //   subtitle: "Motion Graphics content for Product Launch 🚀",
+  //   image: "/timeline/octanner.svg",
+  //   slideImage: "/timeline/aftereffects.jpg",
+  //   shouldDrawLine: true,
+  //   alignment: Branch.LEFT,
+  // },
+  // {
+  //   type: NodeTypes.CONVERGE,
+  // },
   {
     type: NodeTypes.CHECKPOINT,
     title: "2019",
@@ -275,13 +266,18 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
+
+  // {
+  //   type: NodeTypes.CHECKPOINT,
+  //   title: "Graduated from College 🎓",
+  //   size: ItemSize.SMALL,
+  //   subtitle:
+  //     "Spent 4 years laying the foundation of Frontend Engineering, UI/UX, and Fitness!",
+  //   image: "/timeline/akgec.svg",
+  //   slideImage: "/timeline/farewell.jpg",
+  //   shouldDrawLine: true,
+  //   alignment: Branch.LEFT,
+  // },
 
   {
     type: NodeTypes.CHECKPOINT,
@@ -290,15 +286,28 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
-
+  {
+    type: NodeTypes.DIVERGE,
+  },
   {
     type: NodeTypes.CHECKPOINT,
     title: "WEB DEVELOPER - The Roothub",
-    size: ItemSize.SMALL,
+    size: ItemSize.LARGE,
     subtitle:
       "Conducted HTML and CSS training for beginners, redesigned and maintained websites for improved performance, built web apps with Node and Express, and created graphic designs using Adobe Photoshop and Illustrator.",
     image: "/timeline/si.svg",
     slideImage: "/timeline/si-head.jpg",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Lecture on SVG animations",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Guided 200 students to create their first animated SVG using CSS/SMIL at PHP Workshop, SDC-SI",
+
+    slideImage: "/timeline/svg-lecture.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -308,7 +317,19 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     title: "2017",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
-    alignment: Branch.LEFT,
+    alignment: Branch.RIGHT,
+  },
+
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "2016",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.RIGHT,
+  },
+
+  {
+    type: NodeTypes.CONVERGE,
   },
   {
     type: NodeTypes.CHECKPOINT,
@@ -320,13 +341,9 @@ export const TIMELINE: Array<TimelineNodeV2> = [
 
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Recognized Themer",
-    size: ItemSize.SMALL,
-    subtitle:
-      "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
-    image: "/timeline/xda.svg",
-    slideImage: "/timeline/xda-rt.jpg",
-    shouldDrawLine: true,
+    title: "2014",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
 ];

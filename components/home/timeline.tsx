@@ -16,7 +16,7 @@ import { IDesktop, isSmallScreen } from "pages";
 
 const svgColor = "#9CA3AF";
 const animColor = "#FCD34D";
-const separation = 450;
+const separation = 500;
 const strokeWidth = 2;
 const leftBranchX = 13;
 const curveLength = 150;
@@ -162,7 +162,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       ? `<img src='${image}' class='h-8 mb-2' loading='lazy' width='100' height='32' alt='${image}' />`
       : "";
     const subtitleString = subtitle
-      ? `<p class='text-xl mt-2 text-gray-200 font-medium tracking-wide'>${subtitle}</p>`
+      ? `<p class='text-sm mt-2 text-gray-200 font-medium tracking-wide'>${subtitle}</p>`
       : "";
 
     return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} 
