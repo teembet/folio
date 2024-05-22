@@ -63,7 +63,7 @@ const AboutSection = () => {
           willChange ? "will-change-opacity" : ""
         }`}
       >
-        I am a passionate Software Engineer focused on solving problems with
+        I am a seasoned Software Engineer focused on solving problems with
         modern frontend architecture.{" "}
       </span>
       <span
