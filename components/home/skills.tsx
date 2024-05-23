@@ -46,7 +46,7 @@ const SkillsSection = () => {
       <h1 className="section-heading seq mt-2">My Skills</h1>
       <h2 className="text-2xl md:max-w-2xl w-full seq mt-2">
         I like to take responsibility to craft aesthetic user experience using
-        modern frontend architecture.{" "}
+        modern frontend/backend architecture.{" "}
       </h2>
     </div>
   );
@@ -90,8 +90,8 @@ const SkillsSection = () => {
             key={skill}
             src={`/skills/${skill}.svg`}
             alt={skill}
-            width={76}
-            height={76}
+            width={66}
+            height={66}
             className="skill"
           />
         ))}

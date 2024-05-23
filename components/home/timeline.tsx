@@ -150,7 +150,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     y: number,
     isDiverged: boolean
   ) => {
-    const { title, subtitle, size, image } = timelineNode;
+    const { title, subtitle, size, image, titleLink } = timelineNode;
 
     const offset = isDiverged ? rightBranchX : 10;
     const foreignObjectX = dotSize / 2 + 10 + offset;
@@ -166,7 +166,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       : "";
 
     return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} 
-        height=${separation}>${logoString}<p class='${titleSizeClass}'>${title}</p>${subtitleString}</foreignObject>`;
+        height=${separation}>${logoString}<a href=${titleLink} target='_blank' rel='noopener noreferrer' class='${titleSizeClass} hover:underline'>${title}</a>${subtitleString}</foreignObject>`;
   };
 
   const drawLine = (
@@ -468,7 +468,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
         <div className="absolute top-0 left-0 h-full w-full">
           {svgCheckpointItems.map((item, index) => (
             <Image
-              className={`w-full absolute top-0 object-cover slide-${
+              className={`w-full absolute top-0 object-contain slide-${
                 index + 1
               }`}
               src={(item as CheckpointNode).slideImage || ""}

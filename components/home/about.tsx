@@ -64,7 +64,7 @@ const AboutSection = () => {
         }`}
       >
         I am a seasoned Software Engineer focused on solving problems with
-        modern frontend architecture.{" "}
+        modern frontend/backend architecture.{" "}
       </span>
       <span
         className={`about-2 leading-tight ${
@@ -72,8 +72,8 @@ const AboutSection = () => {
         }`}
       >
         I take responsibility to craft a good user experience using modern
-        frontend architecture and drive innovation and align technology with
-        business goals.
+        frontend/backend architecture and drive innovation and align technology
+        with business goals.
       </span>
     </h1>
   );

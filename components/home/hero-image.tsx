@@ -2420,6 +2420,7 @@ const HeroImage = () => (
           </g>
         </g>
       </g>
+      {/*       
       <g clipPath="url(#clip5)" id="Frame_24">
         <rect x={567} y={134} width={37} height={37} rx={4} fill="#233950" />
         <g id="figma-1_1" clipPath="url(#clip6)" filter="url(#filter2_d)">
@@ -2449,7 +2450,7 @@ const HeroImage = () => (
             fill="#1ABCFE"
           />
         </g>
-      </g>
+      </g> */}
     </g>
     <defs>
       <clipPath id="clip0">
