@@ -194,12 +194,12 @@ export const SKILLS = {
     "react",
     "next",
     "angular",
-    "tailwind",
     "vue",
     "nuxtjs",
+    "aws", "nodejs","git",
   ],
   userInterface: ["figma", "xd"],
-  other: ["git", "aws", "nodejs"],
+  
 };
 
 export enum Branch {
