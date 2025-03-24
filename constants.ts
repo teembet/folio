@@ -228,7 +228,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Software Lead - NEBULA LOGIX",
+    title: "Software Lead/CTO - NEBULA LOGIX",
     titleLink: "https://main.d1nf2ta7l19xon.amplifyapp.com/",
     size: ItemSize.SMALL,
     subtitle:
