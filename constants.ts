@@ -229,7 +229,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
     title: "Software Lead/CTO - NEBULA LOGIX",
-    titleLink: "https://main.d1nf2ta7l19xon.amplifyapp.com/",
+    titleLink: "https://www.nebulalogix.io/",
     size: ItemSize.SMALL,
     subtitle:
       "Spearheaded the development of highly responsive web interfaces for both client-facing and administrative platforms for Bechtel Company, ensuring a seamless user experience across all devices. This involved collaborating closely with cross-functional teams to gather requirements, implementing cutting-edge front-end technologies, and conducting thorough testing and optimization to meet the company's stringent performance and usability standards. The resulting interfaces not only enhanced operational efficiency but also significantly improved user engagement and satisfaction.",
