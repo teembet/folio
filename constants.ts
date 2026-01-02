@@ -248,6 +248,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
+
    {
     type: NodeTypes.CHECKPOINT,
     title: "Software Lead - EMERGER",
