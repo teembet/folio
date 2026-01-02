@@ -38,14 +38,14 @@ const Footer = () => {
           classes="ml-3"
           type={ButtonTypes.WHITE}
           name="Let's Talk"
-          href={SOCIAL_LINKS.linkedin}
+           href={`mailto:${EMAIL}`}
           otherProps={{
             target: "_blank",
             rel: "noreferrer",
           }}
         ></Button>
       </div>
-      <h2 className="text-center text-sm sm:text-base mt-8">Timbet Ekanem</h2>
+      {/* <h2 className="text-center text-sm sm:text-base mt-8">Timbet Ekanem</h2> */}
     </>
   );
 

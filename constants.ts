@@ -2,7 +2,6 @@ export const METADATA = {
   title: "Portfolio | Timbet Ekanem",
   description:
     "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend/backend architecture.",
-  // siteUrl: "https://ayushsingh.net/",
 };
 
 export const MENULINKS = [
@@ -31,7 +30,6 @@ export const MENULINKS = [
 export const TYPED_STRINGS = [
   "I strategize and implement technology solutions",
   "I oversee the development of modern frontend apps",
-  "I design dynamic user experiences",
   "I drive innovation in technology and development",
   "I ensure scalable and robust technology architectures",
   "I lead and manage technology teams",
@@ -59,6 +57,18 @@ export interface IProject {
 
 export const PROJECTS: IProject[] = [
   {
+    name: "UTOSIA DRIVE",
+    image: "/timeline/utosialogo.svg",
+    blurImage: "/projects/blur/figgen-blur.jpg",
+    description:
+      "AN INNOVATIVE ELECTRIC VEHICLE (EV) PLATFORM THAT INTEGRATES CUTTING-EDGE TECHNOLOGY TO ENHANCE USER EXPERIENCE, OPTIMIZE PERFORMANCE, AND PROMOTE SUSTAINABLE TRANSPORTATION SOLUTIONS.",
+  gradient: ["#245B57", "#004741"],
+
+    url: "https://www.utosiadrive.com/",
+    tech: ["javascript", "react", "aws"],
+    // ,Vue, Vuetify, HTML, Javascript
+  },  
+  {
     name: "BZ-ONE",
     image: "/projects/bzone.png",
     blurImage: "/projects/blur/figgen-blur.jpg",
@@ -66,7 +76,19 @@ export const PROJECTS: IProject[] = [
       "A PLATFORM PROMOTING SUPPLIER DIVERSITY AND INCLUSION IN BECHTEL'S GLOBAL SUPPLY CHAIN THROUGH BUSINESS OPPORTUNITIES AND RESOURCES.",
     gradient: ["#1F6582", "#21B073"],
 
-    url: "https://diversebusinessbechtel.com/",
+    url: "https://bz-one.com/",
+    tech: ["javascript", "react", "aws"],
+    // ,Vue, Vuetify, HTML, Javascript
+  },
+   {
+    name: "PAYHIPPO (RIVY)",
+    image: "/projects/payhippo.png",
+    blurImage: "/projects/blur/figgen-blur.jpg",
+    description:
+      "A FINTECH COMPANY PROVIDING QUICK, EASY, AND ACCESSIBLE LOANS TO SMALL BUSINESSES IN NIGERIA TO SUPPORT THEIR GROWTH AND SUCCESS.",
+    gradient: ["#1F6582", "#1ABCFE"],
+
+    url: "https://payhippo.ng/",
     tech: ["javascript", "react", "aws"],
     // ,Vue, Vuetify, HTML, Javascript
   },
@@ -78,22 +100,10 @@ export const PROJECTS: IProject[] = [
       "AN E-COMMERCE PLATFORM OFFERING A WIDE RANGE OF PRODUCTS, INCLUDING ELECTRONICS, FASHION, AND HOME APPLIANCES, WITH SECURE ONLINE PAYMENT OPTIONS.",
     gradient: ["#1F6582", "#FFD700"],
 
-    url: "https://play.google.com/store/apps/details?id=com.mickmaq&hl=en&gl=US",
+    url: "https://www.mickmaq.com/",
     tech: ["javascript", "react", "aws"],
-    // ,Vue, Vuetify, HTML, Javascript
   },
-  {
-    name: "PAYHIPPO",
-    image: "/projects/payhippo.png",
-    blurImage: "/projects/blur/figgen-blur.jpg",
-    description:
-      "A FINTECH COMPANY PROVIDING QUICK, EASY, AND ACCESSIBLE LOANS TO SMALL BUSINESSES IN NIGERIA TO SUPPORT THEIR GROWTH AND SUCCESS.",
-    gradient: ["#1F6582", "#1ABCFE"],
-
-    url: "https://payhippo.ng/",
-    tech: ["javascript", "react", "aws"],
-    // ,Vue, Vuetify, HTML, Javascript
-  },
+ 
 
   {
     name: "TRACKMONEY",
@@ -113,7 +123,7 @@ export const PROJECTS: IProject[] = [
       "A FINTECH COMPANY PROVIDING COMPREHENSIVE IT SOLUTIONS AND SERVICES, INCLUDING SOFTWARE DEVELOPMENT, CLOUD COMPUTING, AND CYBERSECURITY, TO HELP BUSINESSES OPTIMIZE THEIR DIGITAL INFRASTRUCTURE AND OPERATIONS.",
     gradient: ["#153BB9", "#0E2C8B"],
     url: "https://iisysgroup.com/",
-    tech: ["javascript", "angular", "nodejs"],
+    tech: ["javascript", "angular", "nodejs",],
   },
   {
     name: "PAYVICE",
@@ -125,67 +135,67 @@ export const PROJECTS: IProject[] = [
     url: "https://www.payvice.com/",
     tech: ["javascript", "jquery", "nodejs"],
   },
-  {
-    name: "AFRIMART",
-    image: "/projects/afrimartsc.png",
-    blurImage: "/projects/blur/figgen-blur.jpg",
-    description:
-      "AN E-COMMERCE PLATFORM CONNECTING AFRICAN BUSINESSES WITH GLOBAL MARKETS, FACILITATING TRADE THROUGH A SECURE AND USER-FRIENDLY ONLINE MARKETPLACE FOR A WIDE RANGE OF PRODUCTS AND SERVICES.",
-    gradient: ["#245B57", "#004741"],
-    url: "https://afrimart.com/en",
-    tech: ["javascript", "react", "nodejs"],
-  },
-  {
-    name: "SOLUSTACK",
-    image: "/projects/solustack.png",
-    blurImage: "/projects/blur/dl-unify-blur.jpg",
-    description:
-      "SOLUSTACK IS A TECHNOLOGY COMPANY SPECIALIZING IN CLOUD SOLUTIONS, SOFTWARE DEVELOPMENT, AND IT CONSULTING SERVICES TO DRIVE BUSINESS INNOVATION AND EFFICIENCY.🚀",
-    gradient: ["#003052", "#0E2C8B"],
-    url: "https://solustack.tech/",
-    tech: ["tailwind", "next", "gsap"],
-  },
-  {
-    name: "TEXAS BULLY REGISTRY",
-    image: "/projects/tbr.png",
-    blurImage: "/projects/blur/ngx-quill-upload-blur.jpg",
-    description:
-      "TEXAS BULLY REGISTRY IS A PLATFORM DEDICATED TO REGISTERING, TRACKING, AND SHOWCASING AMERICAN BULLY DOGS IN TEXAS, PROVIDING RESOURCES AND COMMUNITY CONNECTIONS FOR BREED ENTHUSIASTS.",
-    gradient: ["#3A0000", "#771E1E"],
-    url: "https://texas-bully-registry.vercel.app/",
-    tech: ["typescript", "react", "nodejs"],
-  },
-  {
-    name: "COURSESGRAM",
-    image: "/projects/coursegram.png",
-    blurImage: "/projects/blur/huminos-blur.jpg",
-    description:
-      "COURSESGRAM IS AN ONLINE EDUCATION PLATFORM PROVIDING ACCESS TO A VARIETY OF COURSES ACROSS DIFFERENT DISCIPLINES TO ENHANCE LEARNING AND PROFESSIONAL DEVELOPMENT.",
-    gradient: ["#17007B", "#3A2C79"],
-    url: "https://coursesgram.firebaseapp.com/",
-    tech: ["javascript", "vue"],
-  },
-  {
-    name: "ARISS",
-    image: "/projects/deliver.png",
-    blurImage: "/projects/blur/figgen-blur.jpg",
-    description:
-      "ARIES IS A SAMPLE WEB APPLICATION DESIGNED TO FACILITATE FOOD DELIVERY SERVICES FOR SCHOOLS, OFFERING AN EFFICIENT AND USER-FRIENDLY PLATFORM FOR ORDERING AND DELIVERING MEALS TO STUDENTS.",
-    gradient: ["#1F6582", "#771E1E"],
-    url: "https://aries-f21cb.firebaseapp.com/",
-    tech: ["javascript", "vue", "vuetify"],
-    // ,Vue, Vuetify, HTML, Javascript
-  },
-  {
-    name: "WE THE PEOPLE",
-    image: "/projects/wtp.png",
-    blurImage: "/projects/blur/figgen-blur.jpg",
-    description: "One-stop platform for all things Nigerian Politics",
-    gradient: ["#1F6582", "#771E1E"],
-    url: "https://xd.adobe.com/view/2ecaae90-ac41-4d8b-a8af-3d956c630f67-7b99/",
-    tech: ["xd", "react"],
-    // ,Vue, Vuetify, HTML, Javascript
-  },
+  // {
+  //   name: "AFRIMART",
+  //   image: "/projects/afrimartsc.png",
+  //   blurImage: "/projects/blur/figgen-blur.jpg",
+  //   description:
+  //     "AN E-COMMERCE PLATFORM CONNECTING AFRICAN BUSINESSES WITH GLOBAL MARKETS, FACILITATING TRADE THROUGH A SECURE AND USER-FRIENDLY ONLINE MARKETPLACE FOR A WIDE RANGE OF PRODUCTS AND SERVICES.",
+  //   gradient: ["#245B57", "#004741"],
+  //   url: "https://afrimart.com/en",
+  //   tech: ["javascript", "react", "nodejs"],
+  // },
+  // {
+  //   name: "SOLUSTACK",
+  //   image: "/projects/solustack.png",
+  //   blurImage: "/projects/blur/dl-unify-blur.jpg",
+  //   description:
+  //     "SOLUSTACK IS A TECHNOLOGY COMPANY SPECIALIZING IN CLOUD SOLUTIONS, SOFTWARE DEVELOPMENT, AND IT CONSULTING SERVICES TO DRIVE BUSINESS INNOVATION AND EFFICIENCY.🚀",
+  //   gradient: ["#003052", "#0E2C8B"],
+  //   url: "https://solustack.tech/",
+  //   tech: ["tailwind", "next", "gsap"],
+  // },
+  // {
+  //   name: "TEXAS BULLY REGISTRY",
+  //   image: "/projects/tbr.png",
+  //   blurImage: "/projects/blur/ngx-quill-upload-blur.jpg",
+  //   description:
+  //     "TEXAS BULLY REGISTRY IS A PLATFORM DEDICATED TO REGISTERING, TRACKING, AND SHOWCASING AMERICAN BULLY DOGS IN TEXAS, PROVIDING RESOURCES AND COMMUNITY CONNECTIONS FOR BREED ENTHUSIASTS.",
+  //   gradient: ["#3A0000", "#771E1E"],
+  //   url: "https://texas-bully-registry.vercel.app/",
+  //   tech: ["typescript", "react", "nodejs"],
+  // },
+  // {
+  //   name: "COURSESGRAM",
+  //   image: "/projects/coursegram.png",
+  //   blurImage: "/projects/blur/huminos-blur.jpg",
+  //   description:
+  //     "COURSESGRAM IS AN ONLINE EDUCATION PLATFORM PROVIDING ACCESS TO A VARIETY OF COURSES ACROSS DIFFERENT DISCIPLINES TO ENHANCE LEARNING AND PROFESSIONAL DEVELOPMENT.",
+  //   gradient: ["#17007B", "#3A2C79"],
+  //   url: "https://coursesgram.firebaseapp.com/",
+  //   tech: ["javascript", "vue"],
+  // },
+  // {
+  //   name: "ARISS",
+  //   image: "/projects/deliver.png",
+  //   blurImage: "/projects/blur/figgen-blur.jpg",
+  //   description:
+  //     "ARIES IS A SAMPLE WEB APPLICATION DESIGNED TO FACILITATE FOOD DELIVERY SERVICES FOR SCHOOLS, OFFERING AN EFFICIENT AND USER-FRIENDLY PLATFORM FOR ORDERING AND DELIVERING MEALS TO STUDENTS.",
+  //   gradient: ["#1F6582", "#771E1E"],
+  //   url: "https://aries-f21cb.firebaseapp.com/",
+  //   tech: ["javascript", "vue", "vuetify"],
+  //   // ,Vue, Vuetify, HTML, Javascript
+  // },
+  // {
+  //   name: "WE THE PEOPLE",
+  //   image: "/projects/wtp.png",
+  //   blurImage: "/projects/blur/figgen-blur.jpg",
+  //   description: "One-stop platform for all things Nigerian Politics",
+  //   gradient: ["#1F6582", "#771E1E"],
+  //   url: "https://xd.adobe.com/view/2ecaae90-ac41-4d8b-a8af-3d956c630f67-7b99/",
+  //   tech: ["xd", "react"],
+  //   // ,Vue, Vuetify, HTML, Javascript
+  // },
 ];
 
 export const SKILLS = {
@@ -221,6 +231,37 @@ export enum ItemSize {
 export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
+    title: "2025",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+    {
+    type: NodeTypes.CHECKPOINT,
+    title: "CO-FOUNDER & CTO - UTOSIA DRIVE",
+    titleLink: "https://www.utosiadrive.com/",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Leading the development of an innovative electric vehicle (EV) platform that integrates cutting-edge technology to enhance user experience, optimize performance, and promote sustainable transportation solutions. This role involves overseeing the design and implementation of advanced software systems, collaborating with cross-functional teams to ensure seamless integration of hardware and software components, and driving innovation to position UTOSIA DRIVE as a leader in the EV industry.",
+    image: "/timeline/utosialogo.svg",
+    slideImage: "/timeline/utosia-logo.svg",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+   {
+    type: NodeTypes.CHECKPOINT,
+    title: "Software Lead - EMERGER",
+    titleLink: "https://www.emerger.ai/",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Led the development of a cutting-edge AI-powered platform that leverages machine learning algorithms to deliver personalized user experiences and drive business growth. This involved collaborating with cross-functional teams to design and implement scalable architecture, optimize data processing pipelines, and ensure seamless integration with existing systems. By utilizing advanced AI techniques, we were able to create a platform that not only meets the evolving needs of users but also provides valuable insights and analytics to inform strategic decision-making.",
+    image: "/timeline/EMERGER.svg",
+    slideImage: "/timeline/EMERGER.svg",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+    {
+    type: NodeTypes.CHECKPOINT,
     title: "2024",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
@@ -229,7 +270,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
     title: "Software Lead/CTO - NEBULA LOGIX",
-    titleLink: "https://www.nebulalogix.io/",
+    //titleLink: "https://www.nebulalogix.io/",
     size: ItemSize.SMALL,
     subtitle:
       "Spearheaded the development of highly responsive web interfaces for both client-facing and administrative platforms for Bechtel Company, ensuring a seamless user experience across all devices. This involved collaborating closely with cross-functional teams to gather requirements, implementing cutting-edge front-end technologies, and conducting thorough testing and optimization to meet the company's stringent performance and usability standards. The resulting interfaces not only enhanced operational efficiency but also significantly improved user engagement and satisfaction.",
@@ -278,8 +319,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "SOFTWARE ENGINEER - SOLUSTACK",
-    titleLink: "https://solustack.tech/",
+    title: "LEAD SOFTWARE ENGINEER - SOLUSTACK",
+    //titleLink: "https://solustack.tech/",
     size: ItemSize.SMALL,
     subtitle:
       "Lead the development of user interfaces for a sophisticated chat and trading mobile application using the Ionic framework, ensuring a seamless and intuitive user experience across both iOS and Android platforms. This project entailed designing and implementing interactive and responsive UI components, leveraging Ionic's rich library of pre-built elements and customizing them to meet specific user needs and business requirements.",
@@ -290,7 +331,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "LEAD UI/UX & FRONT-END ENGINEER - ITEX INTEGRATED SERVICES",
+    title: "LEAD SOFTWARE ENGINEER - ITEX INTEGRATED SERVICES",
     titleLink: "https://iisysgroup.com/",
     size: ItemSize.SMALL,
     subtitle:
@@ -323,9 +364,9 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "SOFTWARE DEVELOPER - Teledom International Limited",
+    title: "SOFTWARE DEVELOPER - TELEDOM INTERNATIONAL",
     size: ItemSize.SMALL,
-    titleLink: "https://teledominternational.net/",
+    //titleLink: "https://teledominternational.net/",
     subtitle:
       " Developed websites using WordPress, built Android applications with Android Studio and managed desktop and laptop repairs and maintenance. Through these projects, I gained valuable experience in web development, mobile application development, and hardware troubleshooting, enhancing my technical skills and problem-solving abilities.",
     image: "/timeline/teledom.png",
@@ -344,7 +385,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
 
   {
     type: NodeTypes.CHECKPOINT,
-    title: "WEB DEVELOPER - The Roothub",
+    title: "WEB DEVELOPER - ROOT-HUB",
     size: ItemSize.SMALL,
     titleLink: "https://theroothub.com/",
     subtitle:
