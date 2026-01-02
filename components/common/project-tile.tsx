@@ -101,6 +101,7 @@ const ProjectTile = ({
       layout="fill"
       className={`${styles.ProjectImg} z-0`}
     />
+
   );
 
   return (
@@ -133,11 +134,12 @@ const ProjectTile = ({
           layout="fill"
           className="absolute w-full h-full top-0 left-0 opacity-20"
         />
-        {renderProjectImage(image, blurImage, name)}
+       
         {renderTopBottomGradient(stop1)}
         {renderProjectName(name)}
         {renderTechIcons(tech)}
         {renderDescription(description)}
+         {renderProjectImage(image, blurImage, name)}
       </div>
     </a>
   );

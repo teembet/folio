@@ -127,7 +127,7 @@ const ProjectsSection = ({ isDesktop }: IDesktop) => {
       <h2 className="text-2xl md:max-w-3xl w-full seq max-w-sm mt-2">
         I have taken on increasing responsibilities and contributed to multiple
         projects, ranging from frontend development, backend development and
-        UI/UX design. My roles have included leading development teams and
+        project management. My roles have included leading development teams and
         driving project success.
       </h2>
     </div>

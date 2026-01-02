@@ -25,7 +25,14 @@
   object-fit: contain !important;
   left: unset !important;
   right: 2rem !important;
-  bottom: unset !important;
+  bottom: 8rem !important;
+}
+
+/* Hide project image on small screens (mobile) */
+@media (max-width: 640px) {
+  .ProjectImg {
+    display: none !important;
+  }
 }
 
 .techIcons {
