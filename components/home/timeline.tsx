@@ -30,7 +30,8 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     (item) => item.type === NodeTypes.CHECKPOINT && item.shouldDrawLine
   );
 
-  const svgLength = svgCheckpointItems?.length * separation;
+  // Add extra spacing so the last node has room on mobile
+  const svgLength = (svgCheckpointItems?.length + 1) * separation;
 
   const timelineSvg: MutableRefObject<SVGSVGElement> = useRef(null);
   const svgContainer: MutableRefObject<HTMLDivElement> = useRef(null);
