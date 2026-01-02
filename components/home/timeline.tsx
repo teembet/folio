@@ -30,8 +30,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     (item) => item.type === NodeTypes.CHECKPOINT && item.shouldDrawLine
   );
 
-  // Add extra spacing so the last node has room on mobile
-  const svgLength = (svgCheckpointItems?.length + 1) * separation;
+  const svgLength = svgCheckpointItems?.length * separation;
 
   const timelineSvg: MutableRefObject<SVGSVGElement> = useRef(null);
   const svgContainer: MutableRefObject<HTMLDivElement> = useRef(null);
@@ -158,7 +157,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     const foreignObjectY = y - dotSize / 2;
     const foreignObjectWidth = svgWidth - (dotSize / 2 + 10 + offset);
 
-    const titleSizeClass = size === ItemSize.LARGE ? "text-2xl md:text-6xl" : "text-2xl";
+    const titleSizeClass = size === ItemSize.LARGE ? "text-6xl" : "text-2xl";
     const logoString = image
       ? `<img src='${image}' class='h-8 mb-2' loading='lazy' width='100' height='32' alt='${image}' />`
       : "";
@@ -166,7 +165,8 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
       ? `<p class='text-sm mt-2 text-gray-200 font-medium tracking-wide'>${subtitle}</p>`
       : "";
 
-    return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} height=${separation}><div xmlns='http://www.w3.org/1999/xhtml' style='width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:48px'>${logoString}<a href='${titleLink || "#"}' target='_blank' rel='noopener noreferrer' class='${titleSizeClass} hover:underline' style='color:inherit;text-decoration:none'>${title}</a>${subtitleString}</div></foreignObject>`;
+    return `<foreignObject x=${foreignObjectX} y=${foreignObjectY} width=${foreignObjectWidth} 
+        height=${separation}>${logoString}<a href=${titleLink} target='_blank' rel='noopener noreferrer' class='${titleSizeClass} hover:underline'>${title}</a>${subtitleString}</foreignObject>`;
   };
 
   const drawLine = (
